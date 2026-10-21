@@ -78,7 +78,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @return MongoDbOptions Provides a fluent interface
      */
-    public function setResourceManager(MongoDbResourceManager $resourceManager = null)
+    public function setResourceManager(?MongoDbResourceManager $resourceManager = null)
     {
         if ($this->resourceManager !== $resourceManager) {
             $this->triggerOptionEvent('resource_manager', $resourceManager);
